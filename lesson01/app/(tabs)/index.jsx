@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ImageBackground, Button } from "react-native";
 
 import icedCoffee from '@/assets/images/icedCoffee.jpg'
 
@@ -9,6 +9,9 @@ const app = () => {
       <ImageBackground source={icedCoffee} resizeMode="cover" style={styles.image}>
         <Text style={styles.text}>Coffee Shop</Text>
       </ImageBackground>
+
+      <Button style={styles.offer}  title="See Offer"/>
+
     </View>
   )
 }
@@ -34,6 +37,10 @@ const styles = StyleSheet.create({
     flex:1,
     resizeMode:'cover',
     justifyContent:'center'
+  },
+  offer:{
+    position:'absolute',
+    top:0
   }
 
 
