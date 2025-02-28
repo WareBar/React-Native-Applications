@@ -19,6 +19,37 @@ const App = () => {
         </View>
       </View>
 
+      <View style={styles.creditCard}>
+
+      </View>
+
+      <View style={styles.servicesContainer}>
+        <Text>Services</Text>
+        <View style={styles.services}>
+
+          <View style={styles.servicesCard}>
+            <View style={styles.icon}></View>
+            <Text style={styles.serviceName}>Wallet</Text>
+          </View>
+
+          <View style={styles.servicesCard}>
+            <View style={styles.icon}></View>
+            <Text style={styles.serviceName}>Transfer</Text>
+          </View>
+
+          <View style={styles.servicesCard}>
+            <View style={styles.icon}></View>
+            <Text style={styles.serviceName}>Pay</Text>
+          </View>
+
+          <View style={styles.servicesCard}>
+            <View style={styles.icon}></View>
+            <Text style={styles.serviceName}>Topup</Text>
+          </View>
+
+        </View>
+      </View>
+
       {/* BELOW IS THE COMPONENT FOR CARD SHOW */}
 
     </View>
@@ -29,9 +60,11 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100%'
+    width: '100%',
+    alignItems: 'center'
   },
   headNav:{
+    width: '100%',
     // borderWidth: 1,
     flexDirection: 'row',
     // : '10, 20',
@@ -55,6 +88,37 @@ const styles = StyleSheet.create({
   name:{
     fontSize: 16,
     fontWeight: 'bold'
+  },
+  creditCard:{
+    backgroundColor: '#252525',
+    width: '90%',
+    height: 180,
+    borderRadius: 8,
+    margin: 20
+  },
+
+  servicesContainer: {
+    borderWidth: 1,
+    height: 100,
+    width: '90%'
+  },
+
+  services:{
+    flex: 1,
+    flexDirection: 'row',
+    // justifyContent: 'center',
+    borderWidth: 1
+  },
+
+
+  servicesCard:{
+    flex: 1
+  },
+
+  icon:{
+    backgroundColor: '#252525',
+    height: 60,
+    width: 60
   }
 })
 
