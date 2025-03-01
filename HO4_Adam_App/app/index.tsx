@@ -115,6 +115,12 @@ const styles = StyleSheet.create({
     flex: 1
   },
 
+  serviceName:{
+    fontWeight: 'bold',
+    textAlign: 'center'
+  },
+
+
   icon:{
     backgroundColor: '#252525',
     height: 60,
